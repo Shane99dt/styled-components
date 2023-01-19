@@ -3,8 +3,8 @@ import { green } from "./colors/Colors";
 
 const Highlighted = styled.button`
   color: ${green};
-  font-size: 16px;
+  font-size: ${(props) => props.fontSize || "16px"};
   text-decoration: none;
-`
+`;
 
-export default Highlighted
+export default Highlighted;
